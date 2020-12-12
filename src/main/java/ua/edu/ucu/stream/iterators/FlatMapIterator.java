@@ -1,7 +1,6 @@
 package ua.edu.ucu.stream.iterators;
 
 import ua.edu.ucu.function.IntToIntStreamFunction;
-import ua.edu.ucu.stream.iterators.MyIterator;
 
 import java.util.ArrayList;
 import java.util.Iterator;

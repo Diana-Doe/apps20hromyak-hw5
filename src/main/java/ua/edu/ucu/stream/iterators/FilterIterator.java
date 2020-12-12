@@ -28,6 +28,9 @@ public class FilterIterator implements Iterator  {
 
     @Override
     public Integer next() {
+        if (cur == null) {
+            throw new IndexOutOfBoundsException();
+        }
         return cur;
     }
 }

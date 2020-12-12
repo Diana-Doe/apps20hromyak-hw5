@@ -12,7 +12,7 @@ public class AsIntStream implements IntStream {
     private Iterator<Integer> iterator;
 
     private AsIntStream(int... values) {
-        for (Integer value : values) {
+        for (int value : values) {
             this.stream.add(value);
         }
         this.iterator = new MyIterator(stream);
@@ -24,7 +24,7 @@ public class AsIntStream implements IntStream {
 
     @Override
     public Double average() {
-        Double result = 0.0;
+        double result = 0.0;
         int count = 0;
         while (iterator.hasNext()) {
             result += iterator.next();
@@ -70,7 +70,7 @@ public class AsIntStream implements IntStream {
 
     @Override
     public Integer sum() {
-        Integer sum = 0;
+        int sum = 0;
         for (Iterator<Integer> iter = iterator; iterator.hasNext();) {
             sum += iter.next();
         }

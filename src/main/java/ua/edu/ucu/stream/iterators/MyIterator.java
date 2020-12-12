@@ -1,6 +1,5 @@
 package ua.edu.ucu.stream.iterators;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -20,6 +19,9 @@ public class MyIterator implements Iterator {
 
     @Override
     public Integer next() {
+        if (arr.size() == 0) {
+            throw new IndexOutOfBoundsException();
+        }
         return (Integer) arr.toArray()[currentIndex++];
     }
 

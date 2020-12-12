@@ -1,6 +1,5 @@
 package ua.edu.ucu.stream.iterators;
 
-import ua.edu.ucu.function.IntPredicate;
 import ua.edu.ucu.function.IntUnaryOperator;
 
 import java.util.Iterator;
